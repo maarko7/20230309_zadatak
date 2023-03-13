@@ -76,18 +76,18 @@ public class Main {
 
             FileReader reader = new FileReader(file);
 
-            char[] buffer = new char[10];
+            char[] buffer = new char[3];
             reader.read(buffer);
             reader.close();
 
             String content = new String(buffer);
 
-            if (content == konverzijskiBrojString){
+            if (konverzijskiBrojString.equals(content)){        //provjeriti
                 System.out.println("Konverzijski broj se podudara.");
             }else {
-                System.out.println("Konverzijski broj nije ispravan.");
+                System.out.println("Konverzijski broj se ne podudara.");
             }
-
+            System.out.println(content);
             return Double.parseDouble(konverzijskiBrojString);
         }
 }
