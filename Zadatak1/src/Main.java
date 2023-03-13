@@ -7,7 +7,7 @@ public class Main {
 
         double brojKilometara = brojKilometara();
         double konverzijskiBroj = konverzijskiBroj();
-        
+
         double kilometriUMilje = brojKilometara / konverzijskiBroj;
 
         System.out.printf("Uneseno je %.1f kilometara, što je %d milja.",
@@ -74,6 +74,7 @@ public class Main {
                 System.out.println("Konverzijski broj se ne podudara.");
             }
             System.out.println(content);
+            
             return Double.parseDouble(konverzijskiBrojString);
         }
 }
