@@ -5,25 +5,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-//        double brojKilometara;
-//        double brojZaKonverziju;
-//
-//        Scanner scanner = new Scanner(System.in);
-//
-//        boolean valid = false;
-//
-//        do {
-//            System.out.println("Unesite broj kilometara koji zelite za konverziju:");
-//            brojKilometara = scanner.nextDouble();
-//            valid = brojKilometara < 0 ? false : true;
-//            if (!valid) {
-//                System.out.println("Unijeli ste negativan broj. Pokušajte ponovno.");
-//            }
-//        } while (!valid);
-
         double brojKilometara = brojKilometara();
         double konverzijskiBroj = konverzijskiBroj();
+        
         double kilometriUMilje = brojKilometara / konverzijskiBroj;
+
         System.out.printf("Uneseno je %.1f kilometara, što je %d milja.",
                 brojKilometara, (int)kilometriUMilje);
 
